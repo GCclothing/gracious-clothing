@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Clothing - Cart</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Images/Favicon 3.png">
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="Index.html"><img src="./Images/Image (1).png" alt="Gracious Logo"></a>
+        </div>
+        <div class="nav-cart">
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="Index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart">
+                <a href="cart.html" id="cart-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="m2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-section">
+        <h1>Your Cart</h1>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">0 kr</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping:</span>
+                <span id="shipping">50 kr</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="total">0 kr</span>
+            </div>
+            <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>Contact</h3>
+                <p>Contact us: contact@graciousclothing.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/128px-Visa_Inc._logo.svg.png" alt="Visa" style="height: 25px; margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/128px-MasterCard_Logo.svg.png" alt="Mastercard" style="height: 25px; margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/128px-PayPal.svg.png" alt="PayPal" style="height: 25px;">
+            </div>
+            <p>&copy; 2024 Gracious Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

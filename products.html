@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gracious Clothing - Products</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="Index.html"><img src="./Images/Image (1).png" alt="Gracious Logo" loading="lazy" class="lazy" /></a>
+        </div>
+        <button id="hamburger" class="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <div class="nav-cart">
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#delivery">Delivery Info</a></li>
+                    <li><a href="Index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart">
+                <a href="cart.html" id="cart-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="m2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+        <div id="mobile-overlay" class="mobile-overlay"></div>
+    </header>
+
+    <section class="all-products">
+        <h1>All Products</h1>
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be loaded dynamically from main.js -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>Contact</h3>
+                <p>Contact us: contact@graciousclothing.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/128px-Visa_Inc._logo.svg.png" alt="Visa" style="height: 25px; margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/128px-MasterCard_Logo.svg.png" alt="Mastercard" style="height: 25px; margin-right: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/128px-PayPal.svg.png" alt="PayPal" style="height: 25px;">
+            </div>
+            <p>&copy; 2025 Gracious Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="quick-view-modal">
+        <div class="quick-view-modal-content">
+            <button class="quick-view-close">&times;</button>
+            <div class="quick-view-header">
+                <img id="quick-view-image" src="" alt="Product Image">
+            </div>
+            <div class="quick-view-body">
+                <h2 id="quick-view-title" class="quick-view-title"></h2>
+                <p id="quick-view-price" class="quick-view-price"></p>
+                <div class="quick-view-selects">
+                    <select id="quick-view-size">
+                        <option value="">Select Size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <select id="quick-view-color">
+                        <option value="">Select Color</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Gray">Gray</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+                <button id="quick-view-add-to-cart" class="quick-view-add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
